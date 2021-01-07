@@ -4,3 +4,14 @@ new Book('The Hunger Games', 'Suzanne Collins', 2008, 'https://upload.wikimedia.
 if (localStorage.getItem('library')) {
   library = JSON.parse(localStorage.getItem('library'));
 }
+
+let table = document.querySelector('#library')
+render();
+
+function Book(title, author, year, src, isRead) {
+  this.title = title;
+  this.src = src;
+  this.author = author;
+  this.year = year;
+  this.isRead = isRead;
+}
