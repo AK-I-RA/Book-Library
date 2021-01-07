@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="display">
+      <div class="library">
+        <div class="header">My Books<button class="green-btn" onclick="setFormDisplay('flex')">New Book</button></div>
+        <hr>
+        <div class="book-list"></div>
+      </div>
+      <div class="transparent-overlay" style="display: none">
+        <div class="book-form">
+            <div class="header header-small">Add a book</div>
+            <hr>
+            <br>
+            Title:<br>
+            <input type="text" name="title" placeholder="Harry Potter and the Philosopher's Stone"><br>
+            Author:<br>
+            <input type="text" name="author" placeholder="J. K. Rowling"><br>
+            Year:<br>
+            <input type="text" name="year" placeholder="1997"><br>
+            Image URL:<br>
+            <input type="text" name="source" placeholder="https://www.imagesource.com/"><br><br>
+            <button class="blue-btn" onclick="addBook()">Submit</button>
+            <button class="blue-btn" onclick="setFormDisplay('none')">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <div class="book" id="item-template">
+      <div class="book">
+        <div class="book-img">
+          <img src="images/book-default.png" onerror="this.src = 'images/book-default.png'">
+        </div>
+        <div class="book-info">
+          <div class="book-title"></div>
+          <div class="book-year"></div>
+          <div class="book-author"></div>
+          <div class="book-controls">
+            <div class="tooltip">
+              <img src="images/reading-icon.png" alt="reading-icon" class="reading-icon show-tooltip">
+              <span class="tooltiptext read-status"></span>
+            </div>
+            <div class="tooltip">
+              <img src="images/delete-icon.png" alt="delete-icon" class="delete-icon show-tooltip">
+              <span class="tooltiptext">Delete</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
