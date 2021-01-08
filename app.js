@@ -21,3 +21,13 @@ function render() {
   books.forEach(book => {
     book.remove();
   })
+
+  library.forEach((book, i) => {
+    let template = document.getElementById('item-template');
+    let bookDiv = template.cloneNode(true);
+    bookDiv.id = 'book-item-' + i;
+    bookDiv.style = '';
+    bookDiv.querySelector('.book-title').textContent = book.title;
+    bookDiv.querySelector('.book-year').textContent = book.year;
+    bookDiv.querySelector('.book-author').textContent = book.author;
+    bookDiv.querySelector('.book-img img').src = book.src;
