@@ -38,3 +38,7 @@ function render() {
     } else {
       bookDiv.querySelector('.read-status').textContent = 'Unread';
     }
+    bookDiv.querySelector('.delete-icon').onclick = function() {
+      library.splice(i, 1);
+      render();
+    }
