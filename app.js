@@ -42,3 +42,7 @@ function render() {
       library.splice(i, 1);
       render();
     }
+    bookDiv.querySelector('.reading-icon').onclick = function() {
+      book.isRead = !book.isRead;
+      render();
+    };
