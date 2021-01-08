@@ -31,3 +31,10 @@ function render() {
     bookDiv.querySelector('.book-year').textContent = book.year;
     bookDiv.querySelector('.book-author').textContent = book.author;
     bookDiv.querySelector('.book-img img').src = book.src;
+
+    if (book.isRead) {
+      bookDiv.querySelector('.reading-icon').src = 'images/reading-icon-clicked.png';
+      bookDiv.querySelector('.read-status').textContent = 'Read';
+    } else {
+      bookDiv.querySelector('.read-status').textContent = 'Unread';
+    }
