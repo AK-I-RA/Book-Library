@@ -49,3 +49,6 @@ function render() {
     document.querySelector('.book-list').appendChild(bookDiv);
   })
 }
+
+function addBook() {
+  let title = document.querySelector('input[name="title"]').value;
