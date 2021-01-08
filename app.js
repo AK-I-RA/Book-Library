@@ -46,3 +46,6 @@ function render() {
       book.isRead = !book.isRead;
       render();
     };
+    document.querySelector('.book-list').appendChild(bookDiv);
+  })
+}
