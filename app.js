@@ -15,3 +15,9 @@ function Book(title, author, year, src, isRead) {
   this.year = year;
   this.isRead = isRead;
 }
+
+function render() {
+  let books = document.querySelectorAll('.book-list > .book')
+  books.forEach(book => {
+    book.remove();
+  })
