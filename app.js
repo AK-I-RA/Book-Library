@@ -53,3 +53,6 @@ function render() {
 function addBook() {
   let title = document.querySelector('input[name="title"]').value;
   let author = document.querySelector('input[name="author"]').value;
+  let year = document.querySelector('input[name="year"]').value;
+  let source = document.querySelector('input[name="source"]').value;
+  library.push(new Book(title, author, year, source, false));
