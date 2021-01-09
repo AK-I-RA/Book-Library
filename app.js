@@ -60,3 +60,7 @@ function addBook() {
   clearForm();
   render();
 }
+
+function setFormDisplay(style) {
+  document.querySelector('.transparent-overlay').style.display = style;
+}
