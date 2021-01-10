@@ -71,5 +71,5 @@ function clearForm() {
 }
 
 window.onbeforeunload = function() {
-  localStorage.setItem();
+  localStorage.setItem('library', JSON.stringify(library));
 }
