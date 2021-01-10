@@ -69,3 +69,7 @@ function clearForm() {
   let inputs = document.querySelectorAll('.book-form > input');
   inputs.forEach(input => input.value = '')
 }
+
+window.onbeforeunload = function() {
+  localStorage.setItem();
+}
