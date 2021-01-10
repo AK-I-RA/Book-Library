@@ -64,3 +64,8 @@ function addBook() {
 function setFormDisplay(style) {
   document.querySelector('.transparent-overlay').style.display = style;
 }
+
+function clearForm() {
+  let inputs = document.querySelectorAll('.book-form > input');
+  inputs.forEach(input => input.value = '')
+}
