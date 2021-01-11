@@ -1,203 +1,203 @@
 html, body {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  
-  button {
-    cursor: pointer;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition-duration: 0.25s;
-    border: none;
-  }
-  
-  button:focus {
-    outline: none;
-  }
-  
-  input {
-    border-radius: 3px;
-    width: 95%;
-    padding: 5px 5px;
-    margin: 10px 0;
-    border: 1px solid lightgray;
-  }
-  
-  #display {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
-  }
-  
-  .header {
-    display: flex;
-    font-size: 35px;
-    margin: 5px;
-    justify-content: space-between;
-  }
-  
-  .header-small {
-    font-size: 25px;
-  }
-  
-  table {
-    border-collapse: collapse;
-    margin: 10px;
-  }
-  
-  th, td {
-    border: 1px solid gray;
-    font-size: 20px;
-    padding: 10px;
-  }
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
-  
-  #item-template {
-    display: none;
-  }
-  
-  .book {
-    display: flex;
-    height: 180px;
-    width: 280px;
-  }
-  
-  .book-img > img {
-    height: 150px;
-    width: 90px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 2px 3px 4px gray;
-  }
-  
-  .book-controls {
-    display: flex;
-  }
-  
-  .book-controls img {
-    height: 30px;
-    width: 30px;
-    margin: 10px;
-    cursor: pointer;
-  }
-  
-  .book-info {
-    margin-left: 10px;
-    overflow: hidden;
-  }
-  
-  .book-title {
-    display: inline;
-    font-weight: bold;
-    font-size: 16px;
-  }
-  .book-year {
-    display: inline;
-    color: #686868;
-    font-size: 14px;
-  }
-  
-  .book-author {
-    color: 	#505050;
-    font-size: 16px;
-    margin: 10px 0;
-  }
-  
-  .library {
-    height: 85%;
-    min-height: 300px;
-    padding: 15px;
-  
-    width: 700px;
-    background-color: white;
-    margin: 100px 0;
-    border-radius: 10px;
-    box-shadow: 15px 20px 25px lightblue;
-  }
-  
-  .book-list {
-    display: flex;
-    flex-wrap: wrap;
-    overflow-y: scroll;
-    max-height: 70vh;
-  }
-  .book-list > div {
-    margin: 15px;
-  }
-  
-  .transparent-overlay {
-    height: 85%;
-    min-height: 200px;
-    padding: 15px;
-  
-    width: 700px;
-    border-radius: 10px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(128, 128, 128, 0.5);
-  }
-  
-  .book-form {
-    background-color: white;
-    border-radius: 8px;
-    height: 430px;
-    width: 70%;
-    padding: 15px;
-  }
-  
-  .green-btn {
-    background-color: #42f545;
-    box-shadow: 1px 2px 1px lightgreen;
-    padding: 10px;
-    font-size: 18px;
-  }
-  
-  .green-btn:hover {
-    background-color: #36c738;
-  }
-  
-  .blue-btn {
-    background-color: #389eff;
-    box-shadow: 1px 2px 1px lightblue;
-    margin: 5px;
-    padding: 7px;
-    font-size: 15px;
-  }
-  
-  .blue-btn:hover {
-    background-color: #3288d9;
-  }
-  
-  .tooltip {
-    position: relative;
-  }
-  
-  .tooltip .tooltiptext {
-    opacity: 0;
-    transition: opacity 0.2s;
-  
-    font-size: 10px;
-    background-color: white;
-    border: 1px solid black;
-    text-align: center;
-    padding: 2px;
-  
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -15px;
-    margin-top: -5px;
-  }
-  
-  .tooltip:hover .tooltiptext {
-    opacity: 1;
-  }
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition-duration: 0.25s;
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+input {
+  border-radius: 3px;
+  width: 95%;
+  padding: 5px 5px;
+  margin: 10px 0;
+  border: 1px solid lightgray;
+}
+
+#display {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+
+.header {
+  display: flex;
+  font-size: 35px;
+  margin: 5px;
+  justify-content: space-between;
+}
+
+.header-small {
+  font-size: 25px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 10px;
+}
+
+th, td {
+  border: 1px solid gray;
+  font-size: 20px;
+  padding: 10px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+#item-template {
+  display: none;
+}
+
+.book {
+  display: flex;
+  height: 180px;
+  width: 280px;
+}
+
+.book-img > img {
+  height: 150px;
+  width: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 2px 3px 4px gray;
+}
+
+.book-controls {
+  display: flex;
+}
+
+.book-controls img {
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.book-info {
+  margin-left: 10px;
+  overflow: hidden;
+}
+
+.book-title {
+  display: inline;
+  font-weight: bold;
+  font-size: 16px;
+}
+.book-year {
+  display: inline;
+  color: #686868;
+  font-size: 14px;
+}
+
+.book-author {
+  color: 	#505050;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.library {
+  height: 85%;
+  min-height: 300px;
+  padding: 15px;
+
+  width: 700px;
+  background-color: white;
+  margin: 100px 0;
+  border-radius: 10px;
+  box-shadow: 15px 20px 25px lightblue;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  max-height: 70vh;
+}
+.book-list > div {
+  margin: 15px;
+}
+
+.transparent-overlay {
+  height: 85%;
+  min-height: 200px;
+  padding: 15px;
+
+  width: 700px;
+  border-radius: 10px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(128, 128, 128, 0.5);
+}
+
+.book-form {
+  background-color: white;
+  border-radius: 8px;
+  height: 430px;
+  width: 70%;
+  padding: 15px;
+}
+
+.green-btn {
+  background-color: #42f545;
+  box-shadow: 1px 2px 1px lightgreen;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.green-btn:hover {
+  background-color: #36c738;
+}
+
+.blue-btn {
+  background-color: #389eff;
+  box-shadow: 1px 2px 1px lightblue;
+  margin: 5px;
+  padding: 7px;
+  font-size: 15px;
+}
+
+.blue-btn:hover {
+  background-color: #3288d9;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  opacity: 0;
+  transition: opacity 0.2s;
+
+  font-size: 10px;
+  background-color: white;
+  border: 1px solid black;
+  text-align: center;
+  padding: 2px;
+
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -15px;
+  margin-top: -5px;
+}
+
+.tooltip:hover .tooltiptext {
+  opacity: 1;
+}
