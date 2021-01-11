@@ -1,20 +1,18 @@
-let library = [new Book('The Giver', 'Lois Lowry', 1993, 'http://www.ravenoak.net/wp-content/uploads/2015/08/thegiver.jpg', true),
-new Book('Harry Potter and the Philosopher\'s Stone', 'J. K. Rowling', 1997, 'https://dynamic.indigoimages.ca/books/1408855658.jpg?altimages=false&scaleup=true&maxheight=515&width=380&quality=85&sale=2&lang=en', false),
-new Book('The Hunger Games', 'Suzanne Collins', 2008, 'https://upload.wikimedia.org/wikipedia/en/thumb/d/dc/The_Hunger_Games.jpg/220px-The_Hunger_Games.jpg', false)];
-if (localStorage.getItem('library')) {
-  library = JSON.parse(localStorage.getItem('library'));
+let library = [];
+new Book('The Giver', 'Lois Lowry', 1993, true)];	for (let i = 0; i < 5; i++) {
+  library.push(new Book('Harry Potter and the Philosopher\'s Stone', 'J. K. Rowling', 1997, 'https://dynamic.indigoimages.ca/books/1408855658.jpg?altimages=false&scaleup=true&maxheight=515&width=380&quality=85&sale=2&lang=en', false))
 }
-
-let table = document.querySelector('#library')
+let table = document.querySelector('#library')	let table = document.querySelector('#library')
 render();
 
-function Book(title, author, year, src, isRead) {
-  this.title = title;
+
+function Book(title, author, year, isRead) {	function Book(title, author, year, src, isRead) {
+  this.title = title;	  this.title = title;
   this.src = src;
-  this.author = author;
-  this.year = year;
-  this.isRead = isRead;
-}
+  this.author = author;	  this.author = author;
+  this.year = year;	  this.year = year;
+  this.isRead = isRead;	  this.isRead = isRead;
+}	}
 
 function render() {
   let books = document.querySelectorAll('.book-list > .book')
