@@ -33,16 +33,16 @@ function render() {
     bookDiv.querySelector('.book-img img').src = book.src;
 
     if (book.isRead) {
-      bookDiv.querySelector('.reading-icon').src = 'images/reading-icon-clicked.png';
+      bookDiv.querySelector('.reading--icon').src = 'images/reading--icon--clicked.png';
       bookDiv.querySelector('.read-status').textContent = 'Read';
     } else {
       bookDiv.querySelector('.read-status').textContent = 'Unread';
     }
-    bookDiv.querySelector('.delete-icon').onclick = function() {
+    bookDiv.querySelector('.delete--icon').onclick = function() {
       library.splice(i, 1);
       render();
     }
-    bookDiv.querySelector('.reading-icon').onclick = function() {
+    bookDiv.querySelector('.reading--icon').onclick = function() {
       book.isRead = !book.isRead;
       render();
     };
