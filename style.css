@@ -34,6 +34,7 @@ input {
   background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
 }
 
+
 .header {
   display: flex;
   font-size: 35px;
@@ -41,14 +42,17 @@ input {
   justify-content: space-between;
 }
 
+
 .header-small {
   font-size: 25px;
 }
+
 
 table {
   border-collapse: collapse;
   margin: 10px;
 }
+
 
 th, td {
   border: 1px solid gray;
