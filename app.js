@@ -21,6 +21,7 @@ function render() {
   books.forEach(book => {
     book.remove();
   })
+  
 
   library.forEach((book, i) => {
     let template = document.getElementById('item-template');
@@ -50,6 +51,7 @@ function render() {
   })
 }
 
+
 function addBook() {
   let title = document.querySelector('input[name="title"]').value;
   let author = document.querySelector('input[name="author"]').value;
@@ -61,14 +63,17 @@ function addBook() {
   render();
 }
 
+
 function setFormDisplay(style) {
   document.querySelector('.transparent-overlay').style.display = style;
 }
+
 
 function clearForm() {
   let inputs = document.querySelectorAll('.book-form > input');
   inputs.forEach(input => input.value = '')
 }
+
 
 window.onbeforeunload = function() {
   localStorage.setItem('library', JSON.stringify(library));
